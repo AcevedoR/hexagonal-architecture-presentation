@@ -16,16 +16,19 @@ public class BeerServiceImpl implements BeerService {
 
     private final BeerMapper beerMapper = Mappers.getMapper(BeerMapper.class);
 
-    public BeerServiceImpl(final BeerRepository beerRepository) {
+    private final IPARule ipaRule;
+
+    public BeerServiceImpl(final BeerRepository beerRepository, final IPARule ipaRule) {
         this.beerRepository = beerRepository;
+        this.ipaRule = ipaRule;
     }
 
     @Override
     public ResponseBeerDTO create(final CreateBeerDTO createBeerDTO) {
-
         BeerEntity beerEntity = beerMapper.toEntity(createBeerDTO);
+        String ipaType = ipaRule.determineIPA(createBeerDTO.alcool(), createBeerDTO.ibu());
+        beerEntity.setType(ipaType);
         BeerEntity beerSaved = beerRepository.save(beerEntity);
-
         return beerMapper.toResponseBeerDTO(beerSaved);
     }
 }
