@@ -1,8 +1,7 @@
 package com.zenika.tz.hexaarchi.services;
 
-import com.zenika.tz.hexaarchi.dao.BeerRepository;
-import com.zenika.tz.hexaarchi.dto.CreateBeerDTO;
-import com.zenika.tz.hexaarchi.dto.ResponseBeerDTO;
+import com.zenika.tz.hexaarchi.domain.Beer;
+import com.zenika.tz.hexaarchi.domain.CreateBeer;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -24,14 +23,14 @@ class BeerServiceImplTest {
     private IPARule ipaRule;
 
     @Mock
-    private BeerRepository beerRepository;
+    private BeerRepositoryPort beerRepository;
 
     @Test
     void shouldDetermineIPA() {
         when(ipaRule.determineIPA(10.0, 12)).thenReturn("IPA");
         when(beerRepository.save(any())).thenAnswer(i -> i.getArgument(0));
-        CreateBeerDTO createBeerDTO = new CreateBeerDTO("myBeer", "myBrewery", 10.0, 12);
-        ResponseBeerDTO res = beerService.create(createBeerDTO);
+        CreateBeer createBeerDTO = new CreateBeer("myBeer", "myBrewery", 10.0, 12);
+        Beer res = beerService.create(createBeerDTO);
         Assertions.assertThat(res.type()).isEqualTo("IPA");
     }
 
