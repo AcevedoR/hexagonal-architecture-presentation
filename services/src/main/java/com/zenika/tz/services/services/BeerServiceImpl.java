@@ -1,11 +1,11 @@
-package com.zenika.tz.hexaarchi.services;
+package com.zenika.tz.services.services;
 
-import com.zenika.tz.hexaarchi.dao.BeerRepository;
-import com.zenika.tz.hexaarchi.entity.BeerEntity;
+import com.zenika.tz.repository.dao.BeerRepository;
+import com.zenika.tz.repository.entity.BeerEntity;
 
-import com.zenika.tz.hexaarchi.dto.CreateBeerDTO;
-import com.zenika.tz.hexaarchi.dto.ResponseBeerDTO;
-import com.zenika.tz.hexaarchi.mapper.BeerMapper;
+import com.zenika.tz.services.dto.CreateBeerDTO;
+import com.zenika.tz.services.dto.ResponseBeerDTO;
+import com.zenika.tz.services.mapper.BeerMapper;
 
 import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Service;

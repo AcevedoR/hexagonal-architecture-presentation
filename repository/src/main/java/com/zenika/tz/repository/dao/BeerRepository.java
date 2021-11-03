@@ -1,6 +1,6 @@
-package com.zenika.tz.hexaarchi.dao;
+package com.zenika.tz.repository.dao;
 
-import com.zenika.tz.hexaarchi.entity.BeerEntity;
+import com.zenika.tz.repository.entity.BeerEntity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

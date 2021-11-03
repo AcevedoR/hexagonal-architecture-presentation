@@ -1,8 +1,8 @@
 package com.zenika.tz.hexaarchi.controller;
 
-import com.zenika.tz.hexaarchi.dto.CreateBeerDTO;
-import com.zenika.tz.hexaarchi.dto.ResponseBeerDTO;
-import com.zenika.tz.hexaarchi.services.BeerService;
+import com.zenika.tz.services.dto.CreateBeerDTO;
+import com.zenika.tz.services.dto.ResponseBeerDTO;
+import com.zenika.tz.services.services.BeerService;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PostMapping;

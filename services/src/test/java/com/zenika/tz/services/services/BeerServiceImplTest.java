@@ -1,8 +1,8 @@
-package com.zenika.tz.hexaarchi.services;
+package com.zenika.tz.services.services;
 
-import com.zenika.tz.hexaarchi.dao.BeerRepository;
-import com.zenika.tz.hexaarchi.dto.CreateBeerDTO;
-import com.zenika.tz.hexaarchi.dto.ResponseBeerDTO;
+import com.zenika.tz.repository.dao.BeerRepository;
+import com.zenika.tz.services.dto.CreateBeerDTO;
+import com.zenika.tz.services.dto.ResponseBeerDTO;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

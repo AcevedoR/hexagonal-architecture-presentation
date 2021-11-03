@@ -1,4 +1,4 @@
-package com.zenika.tz.hexaarchi.services;
+package com.zenika.tz.services.services;
 
 public interface IPARule {
 
