@@ -3,8 +3,8 @@ package com.zenika.tz.hexaarchi.services;
 import com.zenika.tz.hexaarchi.dao.BeerRepository;
 import com.zenika.tz.hexaarchi.entity.BeerEntity;
 import com.zenika.tz.hexaarchi.mapper.BeerMapper;
-import com.zenika.tz.hexaarchi.pojo.CreateBeerDTO;
-import com.zenika.tz.hexaarchi.pojo.ResponseBeerDTO;
+import com.zenika.tz.hexaarchi.dto.CreateBeerDTO;
+import com.zenika.tz.hexaarchi.dto.ResponseBeerDTO;
 
 import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Service;

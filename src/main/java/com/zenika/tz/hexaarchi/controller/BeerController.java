@@ -1,7 +1,7 @@
 package com.zenika.tz.hexaarchi.controller;
 
-import com.zenika.tz.hexaarchi.pojo.CreateBeerDTO;
-import com.zenika.tz.hexaarchi.pojo.ResponseBeerDTO;
+import com.zenika.tz.hexaarchi.dto.CreateBeerDTO;
+import com.zenika.tz.hexaarchi.dto.ResponseBeerDTO;
 import com.zenika.tz.hexaarchi.services.BeerService;
 
 import org.springframework.http.HttpStatus;
