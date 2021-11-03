@@ -1,4 +1,4 @@
-package com.zenika.tz.repository.entity;
+package com.zenika.tz.hexaarchi.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

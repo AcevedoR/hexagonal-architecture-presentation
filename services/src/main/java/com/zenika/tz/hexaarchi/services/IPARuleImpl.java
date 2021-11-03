@@ -1,4 +1,4 @@
-package com.zenika.tz.services.services;
+package com.zenika.tz.hexaarchi.services;
 
 import org.springframework.stereotype.Component;
 
