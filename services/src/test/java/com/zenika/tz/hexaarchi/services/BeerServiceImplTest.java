@@ -27,7 +27,7 @@ class BeerServiceImplTest {
     private BeerRepository beerRepository;
 
     @Test
-    public void shouldDetermineIPA() {
+    void shouldDetermineIPA() {
         when(ipaRule.determineIPA(10.0, 12)).thenReturn("IPA");
         when(beerRepository.save(any())).thenAnswer(i -> i.getArgument(0));
         CreateBeerDTO createBeerDTO = new CreateBeerDTO("myBeer", "myBrewery", 10.0, 12);
