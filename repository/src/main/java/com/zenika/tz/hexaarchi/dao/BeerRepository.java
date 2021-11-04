@@ -1,10 +1,10 @@
 package com.zenika.tz.hexaarchi.dao;
 
 import com.zenika.tz.hexaarchi.entity.BeerEntity;
+import io.quarkus.hibernate.orm.panache.PanacheRepository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import javax.enterprise.context.ApplicationScoped;
 
-@Repository
-public interface BeerRepository extends JpaRepository<BeerEntity, Long> {
+@ApplicationScoped
+public class BeerRepository implements PanacheRepository<BeerEntity> {
 }

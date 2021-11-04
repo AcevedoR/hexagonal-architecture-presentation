@@ -5,13 +5,15 @@ import com.zenika.tz.hexaarchi.services.BeerRepositoryPort;
 import com.zenika.tz.hexaarchi.services.BeerService;
 import com.zenika.tz.hexaarchi.services.BeerServiceImpl;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.Dependent;
+import javax.ws.rs.Produces;
 
-@Configuration
+@Dependent
 public class BeerServiceBeanProducer {
 
-    @Bean
+    @Produces
+    @ApplicationScoped
     public BeerService beerService(final BeerRepositoryPort beerRepositoryPort) {
         return new BeerServiceImpl(beerRepositoryPort);
     }
