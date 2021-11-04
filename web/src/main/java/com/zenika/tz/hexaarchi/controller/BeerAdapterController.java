@@ -25,7 +25,7 @@ public class BeerAdapterController {
     }
 
     @POST
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public ResponseBeerDTO create(CreateBeerDTO createBeerDTO) {
         return beerMapper.toResponseBearDTO(beerServicePort.create(beerMapper.toCreateBeer(createBeerDTO)));
     }
