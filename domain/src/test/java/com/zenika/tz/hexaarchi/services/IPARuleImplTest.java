@@ -23,7 +23,7 @@ class IPARuleImplTest {
     @ParameterizedTest
     @MethodSource ("tripleIPA")
     void shouldBeATripleIPA(Integer ibu, Double alcool) {
-        String res = ipaRule.determineIPA(alcool, ibu);
+        String res = ipaRule.determineIPAType(alcool, ibu);
 
         Assertions.assertThat(res)
                 .isEqualTo("Triple IPA");
@@ -32,7 +32,7 @@ class IPARuleImplTest {
     @ParameterizedTest
     @MethodSource ("doubleIPA")
     void shouldBeADoubleIPA(Integer ibu, Double alcool) {
-        String res = ipaRule.determineIPA(alcool, ibu);
+        String res = ipaRule.determineIPAType(alcool, ibu);
 
         Assertions.assertThat(res)
                 .isEqualTo("Double IPA");
@@ -41,7 +41,7 @@ class IPARuleImplTest {
     @ParameterizedTest
     @MethodSource ("simpleIPA")
     void shouldBeAnIPA(Integer ibu, Double alcool) {
-        String res = ipaRule.determineIPA(alcool, ibu);
+        String res = ipaRule.determineIPAType(alcool, ibu);
 
         Assertions.assertThat(res)
                 .isEqualTo("IPA");
