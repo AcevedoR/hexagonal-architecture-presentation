@@ -9,3 +9,7 @@ Branches content:
 ## Usage
 Java 17 needed
 `./mvnw spring-boot:run -f web/pom.xml`
+
+## Warning
+This project was made to demonstrate a refactoring following hexa archi, 
+it was made for a quick demo, some pom.xml may be broken
