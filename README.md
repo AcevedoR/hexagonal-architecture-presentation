@@ -7,4 +7,5 @@ Branches content:
 - **hexa-quarkus**: same project, same domain module, but with Quarkus framework
 
 ## Usage
+Java 17 needed
 `./mvnw spring-boot:run -f web/pom.xml`
