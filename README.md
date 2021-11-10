@@ -12,4 +12,4 @@ Java 17 needed
 
 ## Warning
 This project was made to demonstrate a refactoring following hexa archi, 
-it was made for a quick demo, some pom.xml may be broken
+it was made for a quick demo, some code and pom.xml may be ugly, and broken
