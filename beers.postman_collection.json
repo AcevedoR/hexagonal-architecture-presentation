@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "2e945be8-f55c-4326-9197-26e3bebc5858",
+		"name": "other",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hexa-beers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"my beer\",\n    \"brewery\": \"vocation\",\n    \"alcool\": 8.0,\n    \"ibu\": 40\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		}
+	]
+}
