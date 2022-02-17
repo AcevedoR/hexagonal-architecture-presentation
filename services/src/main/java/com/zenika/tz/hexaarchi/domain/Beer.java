@@ -1,4 +1,4 @@
-package com.zenika.tz.hexaarchi.entity;
+package com.zenika.tz.hexaarchi.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class BeerEntity {
+public class Beer {
 
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)

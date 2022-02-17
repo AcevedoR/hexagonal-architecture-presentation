@@ -1,8 +1,8 @@
 package com.zenika.tz.hexaarchi.services;
 
-import com.zenika.tz.hexaarchi.dao.BeerRepository;
 import com.zenika.tz.hexaarchi.dto.CreateBeerDTO;
 import com.zenika.tz.hexaarchi.dto.ResponseBeerDTO;
+import com.zenika.tz.hexaarchi.spi.IBeerRepositoryPort;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -24,7 +24,7 @@ class BeerServiceImplTest {
     private IPARule ipaRule;
 
     @Mock
-    private BeerRepository beerRepository;
+    private IBeerRepositoryPort beerRepository;
 
     @Test
     void shouldDetermineIPA() {
